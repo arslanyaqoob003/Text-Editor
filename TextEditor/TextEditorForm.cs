@@ -79,6 +79,16 @@ namespace TextEditor
             ac.Execute();
         }
 
-       
+        private void countWordsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CountWordTextAction ac = new CountWordTextAction(RTB);
+            ac.Execute();
+        }
+
+        private void changeColourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColourTextAction ac = new ColourTextAction(RTB);
+            ac.Execute();
+        }
     }
 }
