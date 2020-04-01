@@ -65,5 +65,11 @@ namespace TextEditor
            
 
         }
+
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClearTextAction ac = new ClearTextAction(RTB);
+            ac.Execute();
+        }
     }
 }

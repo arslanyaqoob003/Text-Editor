@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\ClearTextAction.cs" />
     <Compile Include="Actions\CopyTextAction.cs" />
     <Compile Include="Actions\CutTextAction.cs" />
     <Compile Include="Actions\OpenTextAction.cs" />
