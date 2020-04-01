@@ -77,5 +77,7 @@ namespace TextEditor
             CapitalTextAction ac = new CapitalTextAction(RTB);
             ac.Execute();
         }
+
+       
     }
 }

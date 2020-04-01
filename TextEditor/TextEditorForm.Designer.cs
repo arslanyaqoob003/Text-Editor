@@ -49,7 +49,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RTB.Location = new System.Drawing.Point(0, 33);
-            this.RTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RTB.Margin = new System.Windows.Forms.Padding(4);
             this.RTB.Name = "RTB";
             this.RTB.Size = new System.Drawing.Size(455, 339);
             this.RTB.TabIndex = 0;
@@ -106,35 +106,35 @@
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.cutToolStripMenuItem.Text = "Cut";
             this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.clearToolStripMenuItem.Text = "Clear";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
             // capitalLetterToolStripMenuItem
             // 
             this.capitalLetterToolStripMenuItem.Name = "capitalLetterToolStripMenuItem";
-            this.capitalLetterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.capitalLetterToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.capitalLetterToolStripMenuItem.Text = "Capital Letter";
             this.capitalLetterToolStripMenuItem.Click += new System.EventHandler(this.capitalLetterToolStripMenuItem_Click);
             // 
@@ -146,9 +146,10 @@
             this.Controls.Add(this.RTB);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TextEditorForm";
-            this.Text = "TextEditor";
+            this.Text = "New TextWord";
+            //this.Load += new System.EventHandler(this.TextEditorForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
