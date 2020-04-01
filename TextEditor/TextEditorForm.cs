@@ -71,5 +71,11 @@ namespace TextEditor
             ClearTextAction ac = new ClearTextAction(RTB);
             ac.Execute();
         }
+
+        private void capitalLetterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CapitalTextAction ac = new CapitalTextAction(RTB);
+            ac.Execute();
+        }
     }
 }
