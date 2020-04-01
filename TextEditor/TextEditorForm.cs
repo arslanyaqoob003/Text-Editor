@@ -17,6 +17,7 @@ namespace TextEditor
         public TextEditorForm()
         {
             InitializeComponent();
+            //this.Text = "My NotePad";
         }
 
         private void cutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -77,5 +78,7 @@ namespace TextEditor
             CapitalTextAction ac = new CapitalTextAction(RTB);
             ac.Execute();
         }
+
+       
     }
 }
