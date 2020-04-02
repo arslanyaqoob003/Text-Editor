@@ -46,7 +46,9 @@
   <ItemGroup>
     <Compile Include="Actions\CapitalTextAction.cs" />
     <Compile Include="Actions\ClearTextAction.cs" />
+    <Compile Include="Actions\ColourTextAction.cs" />
     <Compile Include="Actions\CopyTextAction.cs" />
+    <Compile Include="Actions\CountWordTextAction.cs" />
     <Compile Include="Actions\CutTextAction.cs" />
     <Compile Include="Actions\ExitTextAction.cs" />
     <Compile Include="Actions\NewWindowTextAction.cs" />
