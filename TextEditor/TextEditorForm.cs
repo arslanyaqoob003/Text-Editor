@@ -41,8 +41,8 @@ namespace TextEditor
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Stream myStream;
-            
-           
+
+
             OpenFileDialog openFile = new OpenFileDialog();
 
             if (openFile.ShowDialog() == DialogResult.OK && (myStream = openFile.OpenFile()) != null)
@@ -50,20 +50,20 @@ namespace TextEditor
                 OpenTextAction accc = new OpenTextAction(RTB, myStream);
                 accc.Execute();
             }
-            
+
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+
             SaveFileDialog savefile = new SaveFileDialog();
             if (savefile.ShowDialog() == DialogResult.OK)
             {
-                SaveTextAction acccc = new SaveTextAction(RTB,savefile.FileName);
+                SaveTextAction acccc = new SaveTextAction(RTB, savefile.FileName);
                 acccc.Execute();
-                
+
             }
-           
+
 
         }
 
@@ -79,6 +79,27 @@ namespace TextEditor
             ac.Execute();
         }
 
-       
+        private void newWindowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewWindowTextAction ac = new NewWindowTextAction(RTB);
+            ac.Execute();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string value = RTB.Text;
+            if (value.ToLower().Contains("*"))
+            {
+                ExitTextAction ac = new ExitTextAction(RTB);
+                ac.Execute();
+            }
+            else
+            {
+                Application.Exit();
+            }
+            // ExitTextAction ac = new ExitTextAction(RTB);
+
+
+        }
     }
 }
